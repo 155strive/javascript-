@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="animate.js"></script>
+    <script src="24.轮播图.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        ol {
+            list-style: none;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .focus {
+            overflow: hidden;
+            position: relative;
+            width: 700px;
+            height: 500px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        
+        .focus ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 700%;
+        }
+        
+        .focus ul li {
+            float: left;
+            width: 700px;
+            height: 500px;
+            list-style: none;
+        }
+        
+        .left {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 26px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, .3);
+            line-height: 30px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .right {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 26px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, .3);
+            line-height: 30px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        .dot {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 20px;
+            background-color: rgba(0, 0, 0, .6);
+            border-radius: 10px;
+        }
+        
+        .dot ol li {
+            float: left;
+            width: 12px;
+            height: 12px;
+            margin: 4px 6px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        .current {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="focus">
+        <ul>
+            <li>
+                <img src="public/D6.jpg" alt="">
+            </li>
+            <li>
+                <img src="public/D5.jpg" alt="">
+            </li>
+            <li>
+                <img src="public/D4.jpg" alt="">
+            </li>
+            <li>
+                <img src="public/丁4.jpg" alt="">
+            </li>
+            <li>
+                <img src="public/D3.jpg" alt="">
+            </li>
+
+        </ul>
+        <div class="left">
+            <a href="javascript:;">
+                <</a>
+        </div>
+        <div class="right">
+            <a href="javascript:;">></a>
+        </div>
+        <div class="dot">
+            <ol>
+
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>
